@@ -6,11 +6,6 @@ namespace AlgorithmBooks
     {
         static void Main(string[] args)
         {
-            int a = 1;
-            int b = 2;
-
-            Console.WriteLine(a + b);
-            //스캐너로 풀어야함000
 
 
 
@@ -19,21 +14,33 @@ namespace AlgorithmBooks
 
 
 
+            #region 10430
+            string[] strs = Console.ReadLine().Split();
+            int A = Int32.Parse(strs[0]);
+            int B = Int32.Parse(strs[1]);
+            int C = Int32.Parse(strs[2]);
+
+            Console.WriteLine((A + B) % C);
+            Console.WriteLine(((A % C) + (B % C)) % C);
+            Console.WriteLine((A * B) % C);
+            Console.WriteLine(((A % C) * (B % C)) % C);
+
+            #endregion
+
+            #region 10869
+            //string[] strs = Console.ReadLine().Split();
+            //Console.WriteLine(Int32.Parse(strs[0]) + Int32.Parse(strs[1]));
+            //Console.WriteLine(Int32.Parse(strs[0]) - Int32.Parse(strs[1]));
+            //Console.WriteLine(Int32.Parse(strs[0]) * Int32.Parse(strs[1]));
+            //Console.WriteLine(Int32.Parse(strs[0]) / Int32.Parse(strs[1]));
+            //Console.WriteLine(Int32.Parse(strs[0]) % Int32.Parse(strs[1]));
+            #endregion
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+            #region 1000, 1001, 1008, 10998
+            //string[] strs = Console.ReadLine().Split();
+            //Console.WriteLine(Int32.Parse(strs[0]) + Int32.Parse(strs[1]));
+            #endregion
 
             #region 10172
             //Console.WriteLine("|\\_/|" + "\n" +
