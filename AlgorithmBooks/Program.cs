@@ -7,7 +7,26 @@ namespace AlgorithmBooks
         static void Main(string[] args)
         {
 
+            #region 2588
 
+            int anum = Int32.Parse(Console.ReadLine());
+            int bnum = Int32.Parse(Console.ReadLine());
+            int idx = 0;
+            while(true)
+            {
+                double powNum = Math.Pow((double)10, (double)idx);
+
+                if (powNum > bnum) break;
+
+                int res = (int)Math.Floor(bnum / powNum);
+
+                Console.WriteLine(bnum * res);
+            }
+            Console.WriteLine(anum * bnum);
+
+
+            
+            #endregion
 
 
 
@@ -15,16 +34,15 @@ namespace AlgorithmBooks
 
 
             #region 10430
-            string[] strs = Console.ReadLine().Split();
-            int A = Int32.Parse(strs[0]);
-            int B = Int32.Parse(strs[1]);
-            int C = Int32.Parse(strs[2]);
+            //string[] strs = Console.ReadLine().Split(' ');
+            //int A = Int32.Parse(strs[0]);
+            //int B = Int32.Parse(strs[1]);
+            //int C = Int32.Parse(strs[2]);
 
-            Console.WriteLine((A + B) % C);
-            Console.WriteLine(((A % C) + (B % C)) % C);
-            Console.WriteLine((A * B) % C);
-            Console.WriteLine(((A % C) * (B % C)) % C);
-
+            //Console.WriteLine((A + B) % C);
+            //Console.WriteLine(((A % C) + (B % C)) % C);
+            //Console.WriteLine((A * B) % C);
+            //Console.WriteLine(((A % C) * (B % C)) % C);
             #endregion
 
             #region 10869
