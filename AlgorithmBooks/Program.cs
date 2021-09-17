@@ -9,20 +9,22 @@ namespace AlgorithmBooks
 
             #region 2588
 
-            int anum = Int32.Parse(Console.ReadLine());
-            int bnum = Int32.Parse(Console.ReadLine());
-            int idx = 0;
-            while(true)
+            long anum = Int32.Parse(Console.ReadLine());
+            long bnum = Int32.Parse(Console.ReadLine());
+            long num = 1;
+            long temp = bnum;
+            while(num > 0)
             {
-                double powNum = Math.Pow((double)10, (double)idx);
+                num = bnum % 10;
+                bnum = bnum / 10;
 
-                if (powNum > bnum) break;
-
-                int res = (int)Math.Floor(bnum / powNum);
-
-                Console.WriteLine(bnum * res);
+                if(num > 0)
+                {
+                    Console.WriteLine(anum * num);
+                }
             }
-            Console.WriteLine(anum * bnum);
+
+            Console.WriteLine(anum * temp);
 
 
             
