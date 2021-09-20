@@ -6,17 +6,45 @@ namespace AlgorithmBooks
     {
         static void Main(string[] args)
         {
-            #region 2753
+            #region 14681
+            int x = Int32.Parse(Console.ReadLine());
+            int y = Int32.Parse(Console.ReadLine());
+            int res = 0;
 
-            int year = Int32.Parse(Console.ReadLine());
-            string res = "0";
-
-            if((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
+            if(x > 0)
             {
-                res = "1";
+                res = 4;
+
+                if(y > 0)
+                {
+                    res = 1;
+                }
+            }
+            else
+            {
+                res = 2;
+
+                if(y > 0)
+                {
+                    res = 3;
+                }
             }
 
             Console.WriteLine(res);
+            #endregion
+
+
+            #region 2753
+
+            //int year = Int32.Parse(Console.ReadLine());
+            //string res = "0";
+
+            //if((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
+            //{
+            //    res = "1";
+            //}
+
+            //Console.WriteLine(res);
             #endregion
 
             #region 9498
