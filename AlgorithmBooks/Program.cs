@@ -6,31 +6,77 @@ namespace AlgorithmBooks
     {
         static void Main(string[] args)
         {
+            #region 10950
+            //int cnt = Int32.Parse(Console.ReadLine());
+
+            //for(int i = 0; i < cnt; i++)
+            //{
+            //    string str = Console.ReadLine();
+            //    int oNum = Int32.Parse(str.Split(" ")[0]);
+            //    int tNum = Int32.Parse(str.Split(" ")[1]);
+            //    Console.WriteLine(oNum + tNum);
+            //}
+            #endregion
+
+            #region 2739
+            //int multiNum = Int32.Parse(Console.ReadLine());
+
+            //for(int i = 1; i < 10; i++)
+            //{
+            //    Console.WriteLine(multiNum.ToString() + " * " + i + " = " + (multiNum * i).ToString());
+            //}
+            #endregion
+
+            #region 2884
+            //string input = Console.ReadLine();
+            //int hour = Int32.Parse(input.Split(" ")[0]);
+            //int min = Int32.Parse(input.Split(" ")[1]);
+
+            //string res = "";
+
+            //if(min >= 45)
+            //{
+            //    min -= 45;
+            //}
+            //else
+            //{
+            //    min = (60 + min) - 45;
+            //    hour -= 1;
+            //    if(hour < 0)
+            //    {
+            //        hour = 23;
+            //    }
+            //}
+
+            //res = hour.ToString() + " " + min.ToString();
+            //Console.WriteLine(res);
+            #endregion
+
             #region 14681
-            int x = Int32.Parse(Console.ReadLine());
-            int y = Int32.Parse(Console.ReadLine());
-            int res = 0;
+            //int x = Int32.Parse(Console.ReadLine());
+            //int y = Int32.Parse(Console.ReadLine());
+            //int res = 0;
 
-            if(x > 0)
-            {
-                res = 4;
+            //if(x > 0)
+            //{
+            //    res = 4;
 
-                if(y > 0)
-                {
-                    res = 1;
-                }
-            }
-            else
-            {
-                res = 2;
+            //    if(y > 0)
+            //    {
+            //        res = 1;
+            //    }
+            //}
+            //else
+            //{
+            //    res = 3;
 
-                if(y > 0)
-                {
-                    res = 3;
-                }
-            }
+            //    if(y > 0)
+            //    {
+            //        res = 2;
+            //    }
+            //}
 
-            Console.WriteLine(res);
+            //Console.WriteLine(res);
             #endregion
 
 
