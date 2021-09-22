@@ -4,9 +4,29 @@ namespace AlgorithmBooks
 {
     class Program
     {
+
         static void Main(string[] args)
         {
+
         }
+
+        #region 15552
+        //static System.Text.StringBuilder sb = new System.Text.StringBuilder();
+
+        //static void Main(string[] args)
+        //{
+        //    int cnt = Int32.Parse(Console.ReadLine());
+        //    for(int i = 0; i < cnt; i++)
+        //    {
+        //        string inputNums = Console.ReadLine();
+        //        string res = (Int32.Parse(inputNums.Split()[0]) + Int32.Parse(inputNums.Split()[1])).ToString();
+        //        sb.Append(res + "\n");
+        //    }
+
+        //    Console.WriteLine(sb);
+        //}
+        #endregion 15552
+
         #region 8393
         //public static int addNum(int num)
         //{
@@ -18,10 +38,10 @@ namespace AlgorithmBooks
         //}
 
         //static void Main(string[] args)
-            //{
+        //{
 
-            //int inNum = Int32.Parse(Console.ReadLine());
-            //Console.WriteLine(addNum(inNum));
+        //int inNum = Int32.Parse(Console.ReadLine());
+        //Console.WriteLine(addNum(inNum));
         //}
         #endregion
 
