@@ -4,11 +4,18 @@ namespace AlgorithmBooks
 {
     class Program
     {
-
+        #region 2741
         static void Main(string[] args)
         {
-
+            int endNum = Int32.Parse(Console.ReadLine());
+            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            for(int i = 1; i <= endNum; i++)
+            {
+                sb.Append(i.ToString() + "\n");
+            }
+            Console.Write(sb);
         }
+        #endregion
 
         #region 15552
         //static System.Text.StringBuilder sb = new System.Text.StringBuilder();
