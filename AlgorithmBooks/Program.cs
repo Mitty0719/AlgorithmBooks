@@ -5,21 +5,64 @@ namespace AlgorithmBooks
     class Program
     {
 
-        #region 11021
+        #region 2438, 2439
         static void Main(string[] args)
         {
-            int endNum = Int32.Parse(Console.ReadLine());
+            int astNum = Int32.Parse(Console.ReadLine());
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
 
-            for(int i = 1; i <= endNum; i++)
+            for (int i = 1; i <= astNum; i++)
             {
-                string[] nums = Console.ReadLine().Split(" ");
-                int num1 = Int32.Parse(nums[0]);
-                int num2 = Int32.Parse(nums[1]);
-                sb.Append("Case #" + i + ": " + (num1 + num2) + "\n");
+                for (int j = astNum; j > 0; j--)
+                {
+                    if (j > i)
+                    {
+                        sb.Append(" ");
+                    }
+                    else
+                    {
+                        sb.Append("*");
+                    }
+                }
+                sb.Append("\n");
             }
+
             Console.Write(sb);
         }
+        #endregion
+
+        #region 11022
+        //static void Main(string[] args)
+        //{
+        //    int endNum = Int32.Parse(Console.ReadLine());
+        //    System.Text.StringBuilder sb = new System.Text.StringBuilder();
+
+        //    for (int i = 1; i <= endNum; i++)
+        //    {
+        //        string[] nums = Console.ReadLine().Split(" ");
+        //        int num1 = Int32.Parse(nums[0]);
+        //        int num2 = Int32.Parse(nums[1]);
+        //        sb.Append("Case #" + i + ": " + num1 + " + " + num2 + " = " + (num1 + num2) + "\n");
+        //    }
+        //    Console.Write(sb);
+        //}
+        #endregion
+
+        #region 11021
+        //static void Main(string[] args)
+        //{
+        //    int endNum = Int32.Parse(Console.ReadLine());
+        //    System.Text.StringBuilder sb = new System.Text.StringBuilder();
+
+        //    for(int i = 1; i <= endNum; i++)
+        //    {
+        //        string[] nums = Console.ReadLine().Split(" ");
+        //        int num1 = Int32.Parse(nums[0]);
+        //        int num2 = Int32.Parse(nums[1]);
+        //        sb.Append("Case #" + i + ": " + (num1 + num2) + "\n");
+        //    }
+        //    Console.Write(sb);
+        //}
         #endregion
 
         #region 2742
