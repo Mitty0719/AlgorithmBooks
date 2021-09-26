@@ -5,17 +5,34 @@ namespace AlgorithmBooks
     class Program
     {
 
-        #region 2742
+        #region 11021
         static void Main(string[] args)
         {
-            int startNum = Int32.Parse(Console.ReadLine());
+            int endNum = Int32.Parse(Console.ReadLine());
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
-            for (int i = startNum; i > 0; i--)
+
+            for(int i = 1; i <= endNum; i++)
             {
-                sb.Append(i.ToString() + "\n");
+                string[] nums = Console.ReadLine().Split(" ");
+                int num1 = Int32.Parse(nums[0]);
+                int num2 = Int32.Parse(nums[1]);
+                sb.Append("Case #" + i + ": " + (num1 + num2) + "\n");
             }
             Console.Write(sb);
         }
+        #endregion
+
+        #region 2742
+        //static void Main(string[] args)
+        //{
+        //    int startNum = Int32.Parse(Console.ReadLine());
+        //    System.Text.StringBuilder sb = new System.Text.StringBuilder();
+        //    for (int i = startNum; i > 0; i--)
+        //    {
+        //        sb.Append(i.ToString() + "\n");
+        //    }
+        //    Console.Write(sb);
+        //}
         #endregion
 
         #region 2741
