@@ -4,31 +4,66 @@ namespace AlgorithmBooks
 {
     class Program
     {
-
-        #region 2438, 2439
+        #region 10951, 10952
         static void Main(string[] args)
         {
-            int astNum = Int32.Parse(Console.ReadLine());
-            System.Text.StringBuilder sb = new System.Text.StringBuilder();
-
-            for (int i = 1; i <= astNum; i++)
+            string readLine;
+            while ((readLine = Console.ReadLine()) != null)
             {
-                for (int j = astNum; j > 0; j--)
-                {
-                    if (j > i)
-                    {
-                        sb.Append(" ");
-                    }
-                    else
-                    {
-                        sb.Append("*");
-                    }
-                }
-                sb.Append("\n");
-            }
+                string[] inStr = readLine.Split(' ');
+                int num1 = Int32.Parse(inStr[0]);
+                int num2 = Int32.Parse(inStr[1]);
 
-            Console.Write(sb);
+                Console.WriteLine(num1 + num2);
+            }
         }
+        #endregion
+
+        #region 10871
+        //static void Main(string[] args)
+        //{
+        //    string input = Console.ReadLine();
+        //    int stdNum = Int32.Parse(input.Split(' ')[1]);
+        //    System.Text.StringBuilder sb = new System.Text.StringBuilder();
+
+        //    string[] list = Console.ReadLine().Split(' ');
+
+        //    foreach(string num in list)
+        //    {
+        //        if(Int32.Parse(num) < stdNum)
+        //        {
+        //            sb.Append(num + " ");
+        //        }
+        //    }
+        //    Console.WriteLine(sb);
+        //}
+        #endregion
+
+
+        #region 2438, 2439
+        //static void Main(string[] args)
+        //{
+        //    int astNum = Int32.Parse(Console.ReadLine());
+        //    System.Text.StringBuilder sb = new System.Text.StringBuilder();
+
+        //    for (int i = 1; i <= astNum; i++)
+        //    {
+        //        for (int j = astNum; j > 0; j--)
+        //        {
+        //            if (j > i)
+        //            {
+        //                sb.Append(" ");
+        //            }
+        //            else
+        //            {
+        //                sb.Append("*");
+        //            }
+        //        }
+        //        sb.Append("\n");
+        //    }
+
+        //    Console.Write(sb);
+        //}
         #endregion
 
         #region 11022
