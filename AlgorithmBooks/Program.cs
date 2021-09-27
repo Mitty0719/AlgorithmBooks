@@ -5,18 +5,18 @@ namespace AlgorithmBooks
     class Program
     {
         #region 10951, 10952
-        static void Main(string[] args)
-        {
-            string readLine;
-            while ((readLine = Console.ReadLine()) != null)
-            {
-                string[] inStr = readLine.Split(' ');
-                int num1 = Int32.Parse(inStr[0]);
-                int num2 = Int32.Parse(inStr[1]);
+        //static void Main(string[] args)
+        //{
+        //    string readLine;
+        //    while ((readLine = Console.ReadLine()) != null)
+        //    {
+        //        string[] inStr = readLine.Split(' ');
+        //        int num1 = Int32.Parse(inStr[0]);
+        //        int num2 = Int32.Parse(inStr[1]);
 
-                Console.WriteLine(num1 + num2);
-            }
-        }
+        //        Console.WriteLine(num1 + num2);
+        //    }
+        //}
         #endregion
 
         #region 10871
