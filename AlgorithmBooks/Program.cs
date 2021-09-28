@@ -4,6 +4,39 @@ namespace AlgorithmBooks
 {
     class Program
     {
+        #region 1110
+        static void Main(string[] args)
+        {
+            string stdNum = Console.ReadLine();
+            string chgNum = stdNum;
+            int cnt = 0;
+            while (true)
+            {
+                if (cnt != 0 && stdNum.Equals(chgNum))
+                {
+                    break;
+                }
+
+                if(chgNum.Length == 1)
+                {
+                    chgNum += "0";
+                }
+
+                int sol = Convert.ToInt32(chgNum[0]) + Convert.ToInt32(chgNum[1]);
+                sol %= 10;
+                Console.WriteLine(Convert.ToInt32(chgNum[0]) + Convert.ToInt32(chgNum[1]));
+                Console.WriteLine("chk : "+chgNum);
+                Console.WriteLine("sol : " + sol.ToString());
+                chgNum = chgNum[1] + Convert.ToString(sol);
+
+                cnt++;
+                Console.WriteLine(chgNum);
+            }
+
+            Console.WriteLine(cnt);
+        }
+        #endregion
+
         #region 10951, 10952
         //static void Main(string[] args)
         //{
