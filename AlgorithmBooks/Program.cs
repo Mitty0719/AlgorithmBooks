@@ -8,8 +8,15 @@ namespace AlgorithmBooks
         static void Main(string[] args)
         {
             string stdNum = Console.ReadLine();
+
+            if (stdNum.Length == 1)
+            {
+                stdNum = "0" + stdNum;
+            }
+
             string chgNum = stdNum;
             int cnt = 0;
+
             while (true)
             {
                 if (cnt != 0 && stdNum.Equals(chgNum))
@@ -17,20 +24,12 @@ namespace AlgorithmBooks
                     break;
                 }
 
-                if(chgNum.Length == 1)
-                {
-                    chgNum += "0";
-                }
-
-                int sol = Convert.ToInt32(chgNum[0]) + Convert.ToInt32(chgNum[1]);
+                int sol = (int)(Char.GetNumericValue(chgNum[0]) + Char.GetNumericValue(chgNum[1]));
                 sol %= 10;
-                Console.WriteLine(Convert.ToInt32(chgNum[0]) + Convert.ToInt32(chgNum[1]));
-                Console.WriteLine("chk : "+chgNum);
-                Console.WriteLine("sol : " + sol.ToString());
+
                 chgNum = chgNum[1] + Convert.ToString(sol);
 
                 cnt++;
-                Console.WriteLine(chgNum);
             }
 
             Console.WriteLine(cnt);
