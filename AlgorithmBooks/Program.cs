@@ -1,39 +1,51 @@
 ﻿using System;
+using System.Linq;
 
 namespace AlgorithmBooks
 {
     class Program
     {
-        #region 1110
+        #region 10818
         static void Main(string[] args)
         {
-            string stdNum = Console.ReadLine();
-
-            if (stdNum.Length == 1)
-            {
-                stdNum = "0" + stdNum;
-            }
-
-            string chgNum = stdNum;
-            int cnt = 0;
-
-            while (true)
-            {
-                if (cnt != 0 && stdNum.Equals(chgNum))
-                {
-                    break;
-                }
-
-                int sol = (int)(Char.GetNumericValue(chgNum[0]) + Char.GetNumericValue(chgNum[1]));
-                sol %= 10;
-
-                chgNum = chgNum[1] + Convert.ToString(sol);
-
-                cnt++;
-            }
-
-            Console.WriteLine(cnt);
+            string cnt = Console.ReadLine();
+            int[] list = Console.ReadLine().Split(" ").Select(v => Int32.Parse(v)).ToArray();
+            
+            Console.WriteLine(list.Min());
+            Console.WriteLine(list.Max());
         }
+        #endregion
+
+        #region 1110
+        //static void Main(string[] args)
+        //{
+        //    string stdNum = Console.ReadLine();
+
+        //    if (stdNum.Length == 1)
+        //    {
+        //        stdNum = "0" + stdNum;
+        //    }
+
+        //    string chgNum = stdNum;
+        //    int cnt = 0;
+
+        //    while (true)
+        //    {
+        //        if (cnt != 0 && stdNum.Equals(chgNum))
+        //        {
+        //            break;
+        //        }
+
+        //        int sol = (int)(Char.GetNumericValue(chgNum[0]) + Char.GetNumericValue(chgNum[1]));
+        //        sol %= 10;
+
+        //        chgNum = chgNum[1] + Convert.ToString(sol);
+
+        //        cnt++;
+        //    }
+
+        //    Console.WriteLine(cnt);
+        //}
         #endregion
 
         #region 10951, 10952
