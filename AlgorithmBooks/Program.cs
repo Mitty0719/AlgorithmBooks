@@ -1,19 +1,77 @@
 ﻿using System;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace AlgorithmBooks
 {
     class Program
     {
-        #region 10818
+        #region 2577
         static void Main(string[] args)
         {
-            string cnt = Console.ReadLine();
-            int[] list = Console.ReadLine().Split(" ").Select(v => Int32.Parse(v)).ToArray();
-            
-            Console.WriteLine(list.Min());
-            Console.WriteLine(list.Max());
+            Dictionary<char, int> dict = new Dictionary<char, int>();
+            int mulNum = 1;
+            string inStr = Console.ReadLine();
+
+            while(!string.IsNullOrEmpty(inStr)){
+                mulNum *= Int32.Parse(inStr);
+                inStr = Console.ReadLine();
+            }
+
+            foreach(char num in mulNum.ToString())
+            {
+                if (dict.ContainsKey(num))
+                {
+                    dict[num] += 1;
+                }
+                else
+                {
+                    dict.Add(num, 1);
+                }
+            }
+
+            for(int i = 0; i < 10; i++)
+            {
+                if (dict.ContainsKey(Convert.ToChar(i))){
+                    Console.WriteLine(dict[Convert.ToChar(i)]);
+                }
+                else
+                {
+                    Console.WriteLine(0);
+                }
+            }
         }
+        #endregion
+
+        #region 2562
+        //static void Main(string[] args)
+        //{
+        //    List<int> list = new List<int>();
+        //    while (true)
+        //    {
+        //        try
+        //        {
+        //            list.Add(Int32.Parse(Console.ReadLine()));
+        //        }
+        //        catch
+        //        {
+        //            break;
+        //        }
+        //    }
+
+        //    Console.WriteLine(list.Max());
+        //    Console.WriteLine(list.IndexOf(list.Max())+1);
+        //}
+        #endregion
+
+        #region 10818
+        //static void Main(string[] args)
+        //{
+        //    string cnt = Console.ReadLine();
+        //    int[] arr = Console.ReadLine().Split(" ").Select(v => Int32.Parse(v)).ToArray();
+
+        //    Console.WriteLine(arr.Min() + " " + arr.Max());
+        //}
         #endregion
 
         #region 1110
