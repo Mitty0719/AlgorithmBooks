@@ -29,9 +29,12 @@ namespace AlgorithmBooks
                     dict.Add(num, 1);
                 }
             }
-
+            
             for(int i = 0; i < 10; i++)
             {
+                char ichar = Convert.ToChar(i);
+                Console.Write(ichar + "-"); // ichar가 안나옴//???
+                Console.WriteLine();
                 if (dict.ContainsKey(Convert.ToChar(i))){
                     Console.WriteLine(dict[Convert.ToChar(i)]);
                 }
