@@ -9,40 +9,7 @@ namespace AlgorithmBooks
         #region 2577
         static void Main(string[] args)
         {
-            Dictionary<char, int> dict = new Dictionary<char, int>();
-            int mulNum = 1;
-            string inStr = Console.ReadLine();
-
-            while(!string.IsNullOrEmpty(inStr)){
-                mulNum *= Int32.Parse(inStr);
-                inStr = Console.ReadLine();
-            }
-
-            foreach(char num in mulNum.ToString())
-            {
-                if (dict.ContainsKey(num))
-                {
-                    dict[num] += 1;
-                }
-                else
-                {
-                    dict.Add(num, 1);
-                }
-            }
             
-            for(int i = 0; i < 10; i++)
-            {
-                char ichar = Convert.ToChar(i);
-                Console.Write(ichar + "-"); // ichar가 안나옴//???
-                Console.WriteLine();
-                if (dict.ContainsKey(Convert.ToChar(i))){
-                    Console.WriteLine(dict[Convert.ToChar(i)]);
-                }
-                else
-                {
-                    Console.WriteLine(0);
-                }
-            }
         }
         #endregion
 
